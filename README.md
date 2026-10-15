@@ -22,12 +22,21 @@ This portfolio is built to demonstrate hands-on product leadership, full-lifecyc
 - **Ketto Campaign Assistant:** Prompt-engineered messaging generator built with Python and OpenAI APIs to boost donor retention for crowdfunding organizers.
 - **Alok Industries Financial Model:** Valuation, operational forecasting, debt covenants, and cash flow analysis in MS Excel.
 
-### 3. Product Teardowns (13 Case Studies)
-Deep-dive product breakdowns published on LinkedIn covering user funnels, system architectures, and PLG loops:
-- **Dhan:** Onboarding, KYC verification drop-offs, and order placement speed.
-- **Stripe:** Checkout conversion funnels, payment routing, and webhook reliability.
-- **Notion:** First-time user activation, empty states, and time-to-value loops.
-- **Spotify, Figma, Slack, Airbnb, Duolingo, Superhuman, Netflix, Instagram, DeepSeek AI.**
+### 3. Product Teardowns & Case Studies (21 Deep Dives)
+Deep-dive product breakdowns published on LinkedIn covering user funnels, system architectures, fintech rails, and PLG loops:
+- **Fintech & Payments:**
+  - **Stripe (Part 1 & Part 2):** Checkout conversion funnels, webhook retry idempotency, payment orchestration, and ledger consistency.
+  - **Zerodha:** Bootstrapped scale, zero-brokerage business model, Kite platform UX simplicity, and MVP execution.
+  - **UPI:** NPCI real-time payments infrastructure, QR network effects, and merchant zero-MDR adoption loops.
+  - **Nubank:** Frictionless digital onboarding, zero-fee credit card economics, and Latin America neobank scale.
+  - **Wise:** Peer-to-peer liquidity matching, mid-market FX transparency, and cross-border API rails.
+  - **Affirm:** Point-of-sale credit underwriting, merchant checkout conversion uplift, and transparent BNPL mechanics.
+  - **Capital One:** Information-Based Strategy (IBS), automated risk scoring models, and cloud banking migration.
+  - **Dhan:** Onboarding funnels, KYC verification drop-offs, and order placement latency.
+- **Product-Led Growth (PLG) & Software Platforms:**
+  - **Canva:** Design democratization, freemium viral loops, template monetization, and team workspaces.
+  - **Notion:** First-time user activation, empty states, and time-to-value loops.
+  - **Spotify, Figma, Slack, Airbnb, Duolingo, Superhuman, Netflix, Instagram, DeepSeek AI.**
 
 ### 4. Grounded Operations & Quantitative Research
 - **NeoManpower (Operations Lead):** Directed on-ground execution for 200+ commercial events in Mumbai, managing field teams of up to 133 personnel and commercial accounts for 30+ client enterprises.

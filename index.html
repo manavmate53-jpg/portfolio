@@ -98,7 +98,7 @@
             <span class="summary-text">Commercial events managed on the ground</span>
           </div>
           <div class="summary-item">
-            <span class="summary-num">13</span>
+            <span class="summary-num">20+</span>
             <span class="summary-text">Published product teardowns and case studies</span>
           </div>
           <div class="summary-item">
@@ -413,19 +413,40 @@
                 </a>
               </div>
 
-              <!-- Stripe -->
+              <!-- Stripe (Part 1 & Part 2 Side by Side) -->
               <div class="teardown-item">
                 <div class="teardown-top">
-                  <span class="teardown-name">Stripe Checkout &amp; Payment Routing</span>
-                  <span class="teardown-badge">Payments</span>
+                  <span class="teardown-name">Stripe Payments &amp; Financial Infrastructure</span>
+                  <span class="teardown-badge">2-Part Breakdown</span>
                 </div>
                 <p class="teardown-desc">
-                  Evaluated checkout conversion architecture, error code recovery states, and webhook reliability during network failures.
+                  Dual-part breakdown of Stripe's architecture: checkout conversion loops, webhook retry idempotency, global payment rails, and developer experience.
                 </p>
-                <a href="https://lnkd.in/p/denQxjkR" target="_blank" rel="noopener noreferrer" class="link-action">
-                  Read on LinkedIn
-                  <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"></path><path d="M7 7h10v10"></path></svg>
-                </a>
+                <div class="stripe-case-studies-grid">
+                  <a href="https://lnkd.in/p/denQxjkR" target="_blank" rel="noopener noreferrer" class="teardown-sub-card">
+                    <div class="sub-card-header">
+                      <span class="sub-card-title">Part 1 &middot; Checkout &amp; Routing</span>
+                      <span class="tag-label">Case Study 1</span>
+                    </div>
+                    <p class="sub-card-desc">Payment routing, checkout conversion states, and network fault recovery.</p>
+                    <div class="link-action-row">
+                      <span>Read on LinkedIn</span>
+                      <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"></path><path d="M7 7h10v10"></path></svg>
+                    </div>
+                  </a>
+
+                  <a href="https://lnkd.in/p/dgUZjdC8" target="_blank" rel="noopener noreferrer" class="teardown-sub-card highlight-sub-card">
+                    <div class="sub-card-header">
+                      <span class="sub-card-title">Part 2 &middot; Architecture &amp; Scale</span>
+                      <span class="tag-label accent-pill">Case Study 2 &middot; New</span>
+                    </div>
+                    <p class="sub-card-desc">Ledger consistency, platform infrastructure, and global merchant rails.</p>
+                    <div class="link-action-row">
+                      <span>Read on LinkedIn</span>
+                      <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"></path><path d="M7 7h10v10"></path></svg>
+                    </div>
+                  </a>
+                </div>
               </div>
 
               <!-- Notion -->
@@ -446,17 +467,88 @@
 
             <!-- Expandable Button -->
             <button id="toggleTeardownsBtn" class="btn btn-secondary btn-full" aria-expanded="false" aria-controls="allTeardownsGrid">
-              <span id="toggleTeardownsText">View all 13 teardowns (Spotify, Netflix, Slack, Duolingo, Superhuman, Airbnb, and more)</span>
+              <span id="toggleTeardownsText">View all 20+ case studies &amp; teardowns (Zerodha, UPI, Nubank, Wise, Stripe, Canva, and more)</span>
               <svg id="toggleChevron" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
             </button>
 
             <!-- Expanded Grid (Hidden by default, toggled via JS) -->
             <div id="allTeardownsGrid" class="expanded-teardowns hidden">
               <div class="all-teardowns-header">
-                <strong>Complete Teardown Library (13 Platforms)</strong>
-                <span class="small-hint">Click any platform to view the breakdown</span>
+                <strong>Complete Teardown &amp; Case Study Library (21 Deep Dives)</strong>
+                <span class="small-hint">Click any platform to view the breakdown on LinkedIn</span>
               </div>
               <div class="teardown-cards-grid">
+                <!-- Zerodha -->
+                <a href="https://lnkd.in/p/dA7ZgExt" target="_blank" rel="noopener noreferrer" class="teardown-mini-card">
+                  <div class="mini-card-head">
+                    <span class="platform-name">Zerodha</span>
+                    <span class="tag-label">Fintech &middot; Brokerage</span>
+                  </div>
+                  <p class="mini-card-desc">Bootstrapped scale, zero-brokerage business model, Kite platform UX simplicity, and MVP execution.</p>
+                </a>
+
+                <!-- UPI -->
+                <a href="https://lnkd.in/p/d25Qpt39" target="_blank" rel="noopener noreferrer" class="teardown-mini-card">
+                  <div class="mini-card-head">
+                    <span class="platform-name">UPI</span>
+                    <span class="tag-label">Payment Rails</span>
+                  </div>
+                  <p class="mini-card-desc">NPCI real-time payments infrastructure, QR network effects, and merchant zero-MDR adoption loops.</p>
+                </a>
+
+                <!-- Nubank -->
+                <a href="https://lnkd.in/p/depXqXPe" target="_blank" rel="noopener noreferrer" class="teardown-mini-card">
+                  <div class="mini-card-head">
+                    <span class="platform-name">Nubank</span>
+                    <span class="tag-label">Neobanking</span>
+                  </div>
+                  <p class="mini-card-desc">Frictionless digital onboarding, zero-fee credit card economics, and Latin America neobank scale.</p>
+                </a>
+
+                <!-- Wise -->
+                <a href="https://lnkd.in/p/dX9dYN-i" target="_blank" rel="noopener noreferrer" class="teardown-mini-card">
+                  <div class="mini-card-head">
+                    <span class="platform-name">Wise</span>
+                    <span class="tag-label">Cross-Border FX</span>
+                  </div>
+                  <p class="mini-card-desc">Peer-to-peer liquidity matching, mid-market exchange rate transparency, and cross-border API rails.</p>
+                </a>
+
+                <!-- Affirm -->
+                <a href="https://lnkd.in/p/drSJRgcm" target="_blank" rel="noopener noreferrer" class="teardown-mini-card">
+                  <div class="mini-card-head">
+                    <span class="platform-name">Affirm</span>
+                    <span class="tag-label">BNPL &middot; Lending</span>
+                  </div>
+                  <p class="mini-card-desc">Point-of-sale credit underwriting, merchant checkout conversion uplift, and transparent BNPL mechanics.</p>
+                </a>
+
+                <!-- Capital One -->
+                <a href="https://lnkd.in/p/dM5N_GCY" target="_blank" rel="noopener noreferrer" class="teardown-mini-card">
+                  <div class="mini-card-head">
+                    <span class="platform-name">Capital One</span>
+                    <span class="tag-label">Credit Analytics</span>
+                  </div>
+                  <p class="mini-card-desc">Information-Based Strategy (IBS), automated risk scoring models, and cloud banking migration.</p>
+                </a>
+
+                <!-- Canva -->
+                <a href="https://lnkd.in/p/d4Tqpu9S" target="_blank" rel="noopener noreferrer" class="teardown-mini-card">
+                  <div class="mini-card-head">
+                    <span class="platform-name">Canva</span>
+                    <span class="tag-label">PLG &middot; Freemium</span>
+                  </div>
+                  <p class="mini-card-desc">Design democratization, freemium viral loops, template monetization, and enterprise team workspaces.</p>
+                </a>
+
+                <!-- Stripe (Part 2) -->
+                <a href="https://lnkd.in/p/dgUZjdC8" target="_blank" rel="noopener noreferrer" class="teardown-mini-card">
+                  <div class="mini-card-head">
+                    <span class="platform-name">Stripe (Part 2)</span>
+                    <span class="tag-label">Fintech Infra</span>
+                  </div>
+                  <p class="mini-card-desc">Global payment orchestration, multi-currency routing, ledger consistency, and API reliability.</p>
+                </a>
                 <a href="https://lnkd.in/p/dyjuP8cY" target="_blank" rel="noopener noreferrer" class="teardown-mini-card">
                   <div class="mini-card-head">
                     <span class="platform-name">Spotify</span>

@@ -891,6 +891,79 @@ a {
   color: var(--text-secondary);
 }
 
+/* Stripe Dual Sub-Cards */
+.stripe-case-studies-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 10px;
+  margin-top: 6px;
+}
+
+.teardown-sub-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: var(--bg-secondary);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-sm);
+  padding: 12px 14px;
+  text-decoration: none;
+  transition: all 0.15s ease;
+  gap: 6px;
+}
+
+.teardown-sub-card:hover {
+  background-color: #ffffff;
+  border-color: var(--accent);
+  box-shadow: var(--shadow-sm);
+  transform: translateY(-1px);
+}
+
+.teardown-sub-card.highlight-sub-card {
+  border-color: rgba(99, 102, 241, 0.35);
+  background-color: rgba(99, 102, 241, 0.03);
+}
+
+.teardown-sub-card.highlight-sub-card:hover {
+  border-color: var(--accent);
+  background-color: #ffffff;
+}
+
+.sub-card-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+}
+
+.sub-card-title {
+  font-size: 0.86rem;
+  font-weight: 700;
+  color: var(--text-primary);
+}
+
+.sub-card-desc {
+  font-size: 0.8rem;
+  color: var(--text-secondary);
+  line-height: 1.45;
+  margin: 0;
+}
+
+.accent-pill {
+  background-color: var(--accent) !important;
+  color: #ffffff !important;
+}
+
+.link-action-row {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 0.78rem;
+  font-weight: 600;
+  color: var(--accent);
+  margin-top: 4px;
+}
+
 /* Expanded Teardowns */
 .expanded-teardowns {
   background-color: #ffffff;

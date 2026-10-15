@@ -19,7 +19,7 @@ document.addEventListener('DOMContentLoaded', function () {
       } else {
         allTeardownsGrid.classList.add('hidden');
         toggleBtn.setAttribute('aria-expanded', 'false');
-        toggleText.textContent = 'View all 13 teardowns (Spotify, Netflix, Slack, Duolingo, Superhuman, Airbnb, and more)';
+        toggleText.textContent = 'View all 20+ case studies & teardowns (Zerodha, UPI, Nubank, Wise, Stripe, Canva, and more)';
         if (toggleChevron) {
           toggleChevron.style.transform = 'rotate(0deg)';
         }
