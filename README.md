@@ -42,6 +42,15 @@ Deep-dive product breakdowns published on LinkedIn covering user funnels, system
 - **NeoManpower (Operations Lead):** Directed on-ground execution for 200+ commercial events in Mumbai, managing field teams of up to 133 personnel and commercial accounts for 30+ client enterprises.
 - **Quantitative Market Research:** 3+ years analyzing Indian capital markets, order flow (FII/DII), derivatives microstructure, and developing the *Institutional Alpha OS* model.
 
+### 5. Certifications & Education
+- **Education:** Bachelor of Commerce (B.Com) — University of Mumbai
+- **Certifications:**
+  - **Project Management Institute (PMI):** CIPM (Certified International Project Manager)
+  - **Saylor University:** Operations Management / Operations Manager
+  - **Pendo.io:** AI for Product Management &middot; Radical Product Thinking: Vision Setting &middot; PM Basics
+  - **UpGrad:** Design Thinking &middot; Business Analytics &middot; Business Management
+  - **HelloPM:** Summer of Product (SOP2025)
+
 ---
 
 ## 🛠️ Stack & Structure
