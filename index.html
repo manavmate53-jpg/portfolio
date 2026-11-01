@@ -120,7 +120,7 @@
         <div class="flagship-headline-row">
           <div>
             <h2 class="section-title">HireFlo</h2>
-            <p class="section-lead">AI recruitment software built for Indian staffing agencies. Owned the product end to end.</p>
+            <p class="section-lead">B2B SaaS &amp; AI Product Manager &middot; Automated high-volume frontline recruitment workflows, photo/PDF CV parsing, and candidate scoring.</p>
           </div>
           <div class="flagship-cta-buttons">
             <a href="https://hireflowindia.com/" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm">
@@ -259,10 +259,13 @@
             <h3 class="card-title">Core Product Decisions</h3>
             <ul class="bullet-list">
               <li>
-                <strong>Model Switch:</strong> Replaced the Gemini backend with NVIDIA NIM running Llama 3.1 8B. This cut response latency and lowered per-parse compute costs significantly.
+                <strong>Model Switch &amp; Prompt Tuning:</strong> Replaced the Gemini backend with NVIDIA NIM running Llama 3.1 8B. Cut LLM compute costs by 40% and reduced response latency through strict schema enforcement.
               </li>
               <li>
-                <strong>Freemium Pricing:</strong> Replaced a restrictive 15-day trial lockout with a permanent 5-tier freemium model. Tiers range from 250 free monthly parses up to an enterprise tier of INR 59,999 per month.
+                <strong>Onboarding Redesign:</strong> Redesigned candidate ingestion and screening flows in Figma, lifting end-to-end user workflow completion by 30%.
+              </li>
+              <li>
+                <strong>Freemium Pricing:</strong> Replaced a restrictive 15-day trial lockout with a permanent 5-tier freemium model (250 free monthly parses up to INR 59,999/month enterprise tier).
               </li>
             </ul>
           </div>
@@ -275,13 +278,13 @@
             <h3 class="card-title">Real Production Fixes</h3>
             <ul class="bullet-list">
               <li>
-                <strong>Cache invalidation bug:</strong> Resolved a cache bug that displayed outdated subscription tier labels to active paying users.
+                <strong>1,000-Document Ingestion:</strong> Architected an automated parsing pipeline running 1,000 resumes in under 10 minutes (70% faster throughput without timeouts).
               </li>
               <li>
-                <strong>Kanban sync revert:</strong> Fixed an asynchronous database sync issue where dragged candidate stages reverted after a browser refresh.
+                <strong>Cache Invalidation Bug:</strong> Resolved a cache bug that displayed outdated subscription tier labels to active paying users.
               </li>
               <li>
-                <strong>Bulk ingestion pipeline:</strong> Re-architected file ingestion to prevent server timeouts. The new pipeline processes roughly 1,000 resumes in 10 minutes.
+                <strong>Kanban Sync Revert:</strong> Fixed an asynchronous database sync issue where dragged candidate stages reverted after a browser refresh.
               </li>
             </ul>
           </div>
@@ -326,22 +329,42 @@
               <div class="project-header">
                 <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 6px;">
                   <span class="badge badge-primary">Featured Interactive Lab</span>
-                  <span style="font-size: 0.75rem; font-family: monospace; font-weight: 700; color: #059669;">3 Live Simulations</span>
+                  <span style="font-size: 0.75rem; font-family: monospace; font-weight: 700; color: #059669;">6 Live Simulations</span>
                 </div>
                 <h4 class="project-title">Interactive PM Product Lab</h4>
-                <span class="project-tag">Fintech KYC &middot; Marketplace Telemetry &middot; AI Guardrails &amp; Evals</span>
+                <span class="project-tag">Fintech Rails &middot; Traffic Concurrency &middot; AI Guardrails &middot; Ops Rostering</span>
               </div>
               <div class="project-detail">
                 <span class="detail-label">What It Is:</span>
-                <p>Client-side product management laboratory featuring 3 interactive software tools: <strong>VeriShield</strong> (B2B KYC &amp; risk routing), <strong>AutoMatch IQ</strong> (progressive discovery &amp; live event telemetry), and <strong>EvalGuard AI</strong> (workflow agent with prompt injection defense &amp; token cost calculator).</p>
+                <p>Client-side product management laboratory featuring 6 interactive software simulations designed to demonstrate product thinking, telemetry, and system architecture:</p>
+                <div style="display: grid; grid-template-columns: 1fr; gap: 8px; margin-top: 10px; font-size: 0.8rem;">
+                  <div style="background: rgba(15, 23, 42, 0.04); padding: 8px 10px; border-radius: 6px; border-left: 3px solid #2563eb;">
+                    <strong>1. VeriShield:</strong> B2B KYC, GSTIN/PAN regex &amp; Levenshtein fuzzy entity verification.
+                  </div>
+                  <div style="background: rgba(15, 23, 42, 0.04); padding: 8px 10px; border-radius: 6px; border-left: 3px solid #f59e0b;">
+                    <strong>2. AutoMatch IQ:</strong> Marketplace discovery engine with live funnel telemetry.
+                  </div>
+                  <div style="background: rgba(15, 23, 42, 0.04); padding: 8px 10px; border-radius: 6px; border-left: 3px solid #8b5cf6;">
+                    <strong>3. EvalGuard AI:</strong> Production LLM guardrails, automated evals, and token unit economics.
+                  </div>
+                  <div style="background: rgba(15, 23, 42, 0.04); padding: 8px 10px; border-radius: 6px; border-left: 3px solid #10b981;">
+                    <strong>4. Multi-Gateway Payment Router:</strong> Smart payment cascade, MDR optimization &amp; instant refund idempotency.
+                  </div>
+                  <div style="background: rgba(15, 23, 42, 0.04); padding: 8px 10px; border-radius: 6px; border-left: 3px solid #ec4899;">
+                    <strong>5. High-Concurrency Waiting Room:</strong> Flash sale token bucket queue, bot defense &amp; admission throttling.
+                  </div>
+                  <div style="background: rgba(15, 23, 42, 0.04); padding: 8px 10px; border-radius: 6px; border-left: 3px solid #06b6d4;">
+                    <strong>6. Field Crew Rostering &amp; SLA Dashboard:</strong> Grounded in NeoManpower operations managing 133 staff across Mumbai venues with zero SLA breaches.
+                  </div>
+                </div>
               </div>
-              <div class="project-detail">
+              <div class="project-detail" style="margin-top: 10px;">
                 <span class="detail-label">Key PM Artifacts:</span>
-                <p>Complete PRDs, API payload contracts, PostgreSQL query runners, and token unit economics models.</p>
+                <p>Complete PRDs, API payload contracts, event telemetry logs, and financial reconciliation models accessible inside each tool.</p>
               </div>
               <div class="project-footer" style="display: flex; align-items: center; justify-content: space-between; gap: 8px; flex-wrap: wrap;">
-                <a href="https://manavmate53-jpg.github.io/pm-product-lab/" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm">
-                  Launch Interactive Lab &rarr;
+                <a href="https://manavmate53-jpg.github.io/pm-product-lab/#hub" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm">
+                  Launch Interactive Lab (6 Tools) &rarr;
                 </a>
                 <a href="https://github.com/manavmate53-jpg/pm-product-lab" target="_blank" rel="noopener noreferrer" class="link-action">
                   GitHub Repository
@@ -434,7 +457,7 @@
                   <span class="teardown-badge">Fintech</span>
                 </div>
                 <p class="teardown-desc">
-                  Audited digital onboarding funnels, KYC document verification drop-offs, and order placement speeds across mobile screens.
+                  Conducted end-to-end UX, KYC/CKYC, and API latency teardowns across account opening and verification stages.
                 </p>
                 <a href="https://www.linkedin.com/in/manav-mate-9448b1341/" target="_blank" rel="noopener noreferrer" class="link-action">
                   Read Breakdown
@@ -449,7 +472,7 @@
                   <span class="teardown-badge">2-Part Breakdown</span>
                 </div>
                 <p class="teardown-desc">
-                  Dual-part breakdown of Stripe's architecture: checkout conversion loops, webhook retry idempotency, global payment rails, and developer experience.
+                  Dual-part breakdown of Stripe's architecture: dispute resolution, webhook retry idempotency, checkout conversion loops, and developer APIs.
                 </p>
                 <div class="stripe-case-studies-grid">
                   <a href="https://lnkd.in/p/denQxjkR" target="_blank" rel="noopener noreferrer" class="teardown-sub-card">
@@ -680,22 +703,22 @@
               <div>
                 <span class="badge badge-neutral">4+ Years Leadership</span>
                 <h3 class="op-title">NeoManpower</h3>
-                <p class="op-role">Operations Lead &amp; Business Owner &middot; Dec 2022 to Feb 2026</p>
+                <p class="op-role">Founder &amp; Operations Lead (Mumbai) &middot; Dec 2022 to Feb 2026</p>
               </div>
             </div>
 
             <div class="op-body">
-              <h4 class="op-subhead">What I Did:</h4>
+              <h4 class="op-subhead">Scope &amp; Impact:</h4>
               <ul class="bullet-list">
-                <li>Directed on-ground operations for 200+ commercial events and projects across Mumbai.</li>
-                <li>Recruited, briefed, and scheduled teams of up to 133 field personnel under strict operational deadlines.</li>
-                <li>Handled commercial agreements, billing schedules, and direct stakeholder communication for 30+ client enterprises.</li>
-                <li>Solved unexpected operational bottlenecks live on site with zero SLA breaches.</li>
+                <li>Bootstrapped from zero to 50+ B2B corporate clients and 200+ on-ground commercial projects across Mumbai (exhibitions, corporate venues, and live events).</li>
+                <li>Solved high last-minute staff no-shows, shift scheduling bottlenecks, and manual vendor payout reconciliations under strict deadlines.</li>
+                <li>Built standardized rostering checklists, backup dispatch buffers, and live SLA tracking for field teams of up to 133 personnel.</li>
+                <li>Achieved zero SLA breaches across all 200+ projects and maintained 100% financial reconciliation accuracy on partner payouts.</li>
               </ul>
             </div>
 
             <div class="op-takeaway">
-              <strong>Key Takeaway:</strong> Experience solving live operational bottlenecks under tight deadlines with real financial stakes.
+              <strong>Key Takeaway:</strong> Experience solving live operational bottlenecks, labor volatility, and stakeholder SLAs under real financial stakes.
             </div>
           </div>
 
