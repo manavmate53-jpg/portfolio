@@ -1,10 +1,18 @@
+/* Hallmark · theme: studio · editorial · job: executive product management portfolio */
+
 :root {
+  --primary-hover: var(--primary-hover);
+  --bg-subtle: var(--bg-subtle);
+  --border-indigo: var(--border-indigo);
+  --bg-indigo-soft: var(--bg-indigo-soft);
+  --font-mono: var(--font-mono);
+
   --bg-primary: #ffffff;
-  --bg-secondary: #f8fafc;
-  --bg-tertiary: #f1f5f9;
+  --bg-secondary: var(--bg-secondary);
+  --bg-tertiary: var(--bg-tertiary);
   --card-bg: #ffffff;
   --border-color: #e2e8f0;
-  --border-focus: #cbd5e1;
+  --border-focus: var(--border-focus);
   --text-primary: #0f172a;
   --text-secondary: #475569;
   --text-muted: #64748b;
@@ -33,6 +41,7 @@
   padding: 0;
 }
 
+html, body { overflow-x: clip; }
 html {
   font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
   color: var(--text-primary);
@@ -42,6 +51,7 @@ html {
   -webkit-font-smoothing: antialiased;
 }
 
+:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
 body {
   min-height: 100vh;
   display: flex;
@@ -79,7 +89,7 @@ a {
   position: sticky;
   top: 0;
   z-index: 100;
-  background-color: rgba(255, 255, 255, 0.92);
+  background-color: var(--bg-primary);
   backdrop-filter: blur(8px);
   -webkit-backdrop-filter: blur(8px);
   border-bottom: 1px solid var(--border-color);
@@ -150,7 +160,7 @@ a {
   border-radius: var(--radius-md);
   border: 1px solid transparent;
   cursor: pointer;
-  transition: all 0.15s ease;
+  transition: color , background-color , border-color , transform ;
   white-space: nowrap;
 }
 
@@ -166,13 +176,13 @@ a {
 
 .btn-primary {
   background-color: var(--text-primary);
-  color: #ffffff;
+  colorvar(--bg-primary);
   border-color: var(--text-primary);
 }
 
 .btn-primary:hover {
-  background-color: #1e293b;
-  border-color: #1e293b;
+  background-color: var(--primary-hover);
+  border-color: var(--primary-hover);
 }
 
 .btn-secondary {
@@ -302,13 +312,13 @@ a {
   border: 1px solid var(--border-color);
   background-color: var(--bg-secondary);
   color: var(--text-secondary);
-  transition: all 0.15s ease;
+  transition: color , background-color , border-color , transform ;
 }
 
 .icon-link:hover {
   color: var(--text-primary);
   border-color: var(--border-focus);
-  background-color: #ffffff;
+  background-colorvar(--bg-primary);
 }
 
 /* Summary Strip */
@@ -363,8 +373,8 @@ a {
 .section-tag {
   font-size: 0.75rem;
   font-weight: 700;
-  text-transform: uppercase;
-  letter-spacing: 0.06em;
+  text-transform: none;
+  letter-spacing: normal;
   color: var(--accent);
 }
 
@@ -405,7 +415,7 @@ a {
 .callout-card {
   display: flex;
   gap: 14px;
-  background-color: #f8fafc;
+  background-color: var(--bg-secondary);
   border: 1px solid var(--border-color);
   border-radius: var(--radius-md);
   padding: 14px 16px;
@@ -428,7 +438,7 @@ a {
 
 /* Mockup Frame */
 .mockup-frame {
-  background-color: #ffffff;
+  background-colorvar(--bg-primary);
   border: 1px solid var(--border-color);
   border-radius: var(--radius-lg);
   box-shadow: var(--shadow-md);
@@ -441,31 +451,24 @@ a {
   align-items: center;
   justify-content: space-between;
   padding: 10px 16px;
-  background-color: #f1f5f9;
+  background-color: var(--bg-tertiary);
   border-bottom: 1px solid var(--border-color);
   gap: 8px;
 }
 
-.window-dots {
-  display: flex;
-  gap: 6px;
-}
+/* removed */
 
-.dot {
-  width: 10px;
-  height: 10px;
-  border-radius: 50%;
-}
+/* removed */
 
-.dot.red { background-color: #f87171; }
-.dot.yellow { background-color: #fbbf24; }
-.dot.green { background-color: #34d399; }
+/* removed */
+/* removed */
+/* removed */
 
 .mockup-url {
-  font-family: 'JetBrains Mono', monospace;
+  font-family: var(--font-mono);
   font-size: 0.76rem;
   color: var(--text-secondary);
-  background-color: #ffffff;
+  background-colorvar(--bg-primary);
   padding: 3px 12px;
   border-radius: var(--radius-sm);
   border: 1px solid var(--border-color);
@@ -476,7 +479,7 @@ a {
 }
 
 .mockup-tech-tag {
-  font-family: 'JetBrains Mono', monospace;
+  font-family: var(--font-mono);
   font-size: 0.72rem;
   font-weight: 500;
   color: var(--accent);
@@ -485,9 +488,10 @@ a {
   border-radius: var(--radius-sm);
 }
 
-.mockup-body {
+.mockup-:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+body {
   padding: 20px;
-  background-color: #f8fafc;
+  background-color: var(--bg-secondary);
 }
 
 .mockup-toolbar {
@@ -510,9 +514,9 @@ a {
 }
 
 .stat-pill {
-  font-family: 'JetBrains Mono', monospace;
+  font-family: var(--font-mono);
   font-size: 0.75rem;
-  background-color: #ffffff;
+  background-colorvar(--bg-primary);
   color: var(--text-secondary);
   border: 1px solid var(--border-color);
   padding: 3px 8px;
@@ -533,7 +537,7 @@ a {
 }
 
 .kanban-col {
-  background-color: #ffffff;
+  background-colorvar(--bg-primary);
   border: 1px solid var(--border-color);
   border-radius: var(--radius-md);
   padding: 12px;
@@ -546,8 +550,8 @@ a {
   font-size: 0.78rem;
   font-weight: 700;
   color: var(--text-secondary);
-  text-transform: uppercase;
-  letter-spacing: 0.04em;
+  text-transform: none;
+  letter-spacing: normal;
   margin-bottom: 10px;
   padding-bottom: 8px;
   border-bottom: 1px solid var(--border-color);
@@ -562,7 +566,7 @@ a {
 }
 
 .kanban-card {
-  background-color: #ffffff;
+  background-colorvar(--bg-primary);
   border: 1px solid var(--border-color);
   border-radius: var(--radius-sm);
   padding: 10px;
@@ -575,7 +579,7 @@ a {
 
 .kanban-card.active-card {
   border-color: var(--accent-border);
-  background-color: #fafcff;
+  background-color: var(--bg-subtle);
 }
 
 .card-meta {
@@ -649,8 +653,8 @@ a {
 }
 
 .highlight-card {
-  background-color: #ffffff;
-  border-color: #cbd5e1;
+  background-colorvar(--bg-primary);
+  border-color: var(--border-focus);
 }
 
 .card-icon {
@@ -758,7 +762,7 @@ a {
   background-color: var(--bg-tertiary);
   padding: 2px 7px;
   border-radius: var(--radius-sm);
-  text-transform: uppercase;
+  text-transform: none;
 }
 
 .col-title {
@@ -827,7 +831,7 @@ a {
   display: flex;
   align-items: flex-start;
   gap: 10px;
-  background-color: #ffffff;
+  background-colorvar(--bg-primary);
   border: 1px solid var(--border-color);
   border-radius: var(--radius-md);
   padding: 12px 14px;
@@ -849,7 +853,7 @@ a {
 }
 
 .teardown-item {
-  background-color: #ffffff;
+  background-colorvar(--bg-primary);
   border: 1px solid var(--border-color);
   border-radius: var(--radius-md);
   padding: 18px;
@@ -908,25 +912,25 @@ a {
   border-radius: var(--radius-sm);
   padding: 12px 14px;
   text-decoration: none;
-  transition: all 0.15s ease;
+  transition: color , background-color , border-color , transform ;
   gap: 6px;
 }
 
 .teardown-sub-card:hover {
-  background-color: #ffffff;
+  background-colorvar(--bg-primary);
   border-color: var(--accent);
   box-shadow: var(--shadow-sm);
   transform: translateY(-1px);
 }
 
 .teardown-sub-card.highlight-sub-card {
-  border-color: rgba(99, 102, 241, 0.35);
-  background-color: rgba(99, 102, 241, 0.03);
+  border-color: var(--border-indigo);
+  background-color: var(--bg-indigo-soft);
 }
 
 .teardown-sub-card.highlight-sub-card:hover {
   border-color: var(--accent);
-  background-color: #ffffff;
+  background-colorvar(--bg-primary);
 }
 
 .sub-card-header {
@@ -951,7 +955,7 @@ a {
 
 .accent-pill {
   background-color: var(--accent) !important;
-  color: #ffffff !important;
+  colorvar(--bg-primary) !important;
 }
 
 .link-action-row {
@@ -966,7 +970,7 @@ a {
 
 /* Expanded Teardowns */
 .expanded-teardowns {
-  background-color: #ffffff;
+  background-colorvar(--bg-primary);
   border: 1px solid var(--border-color);
   border-radius: var(--radius-md);
   padding: 18px;
@@ -1008,11 +1012,11 @@ a {
   border: 1px solid var(--border-color);
   border-radius: var(--radius-sm);
   padding: 12px;
-  transition: all 0.15s ease;
+  transition: color , background-color , border-color , transform ;
 }
 
 .teardown-mini-card:hover {
-  background-color: #ffffff;
+  background-colorvar(--bg-primary);
   border-color: var(--accent-border);
 }
 
@@ -1083,15 +1087,16 @@ a {
   font-weight: 600;
 }
 
-.op-body {
+.op-:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+body {
   margin-bottom: 18px;
 }
 
 .op-subhead {
   font-size: 0.84rem;
   font-weight: 700;
-  text-transform: uppercase;
-  letter-spacing: 0.04em;
+  text-transform: none;
+  letter-spacing: normal;
   color: var(--text-muted);
   margin-bottom: 10px;
 }
@@ -1119,7 +1124,7 @@ a {
 }
 
 .skill-category {
-  background-color: #ffffff;
+  background-colorvar(--bg-primary);
   border: 1px solid var(--border-color);
   border-radius: var(--radius-md);
   padding: 18px 20px;
@@ -1220,8 +1225,8 @@ a {
   font-size: 0.78rem;
   font-weight: 700;
   color: var(--text-primary);
-  text-transform: uppercase;
-  letter-spacing: 0.03em;
+  text-transform: none;
+  letter-spacing: normal;
 }
 
 .cert-name {
@@ -1233,7 +1238,7 @@ a {
 /* Contact Section */
 .contact-section {
   padding: 72px 0;
-  background-color: #ffffff;
+  background-colorvar(--bg-primary);
 }
 
 .contact-box {
@@ -1273,11 +1278,11 @@ a {
   display: flex;
   align-items: center;
   gap: 14px;
-  background-color: #ffffff;
+  background-colorvar(--bg-primary);
   border: 1px solid var(--border-color);
   border-radius: var(--radius-md);
   padding: 14px 16px;
-  transition: all 0.15s ease;
+  transition: color , background-color , border-color , transform ;
 }
 
 .contact-item:hover {
@@ -1299,8 +1304,8 @@ a {
 .contact-label {
   font-size: 0.72rem;
   font-weight: 700;
-  text-transform: uppercase;
-  letter-spacing: 0.04em;
+  text-transform: none;
+  letter-spacing: normal;
   color: var(--text-muted);
 }
 
@@ -1350,7 +1355,7 @@ a {
   bottom: 24px;
   right: 24px;
   background-color: var(--text-primary);
-  color: #ffffff;
+  colorvar(--bg-primary);
   padding: 12px 20px;
   border-radius: var(--radius-md);
   font-size: 0.86rem;
@@ -1438,5 +1443,13 @@ a {
 
   .contact-box {
     padding: 48px 40px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
   }
 }
